@@ -30,19 +30,29 @@ npm install --save lodash
 ```
 1. Install yo, grunt-cli, bower, generator-angular and generator-karma:
 
-> npm install -g grunt-cli bower yo generator-karma generator-angular
+=> npm install -g grunt-cli bower yo generator-karma generator-angular
 
 2. Planning on using Sass, we will need to first install Ruby and Compass:
 
-> gem install compass
+=> gem install compass
 
 Make a new directory, and cd into it:
 
 3. Run yo angular, optionally passing an app name:
 
-> yo angular movieapp
+=> yo angular movieapp
 
 4. Run grunt for building and serve for preview:
 
-> grunt serve
+=> grunt serve
+```
+
+# GENERATE THE MOVIES ROUTE
+```
+PS C:\Users\*\Desktop\MovieApp\client> yo angular:route movies
+   invoke   angular:controller:C:\Users\*\AppData\Roaming\npm\node_modules\generator-angular\route\index.js
+   create     app\scripts\controllers\movies.js
+   create     test\spec\controllers\movies.js
+   invoke   angular:view:C:\Users\*\AppData\Roaming\npm\node_modules\generator-angular\route\index.js
+   create     app\views\movies.html
 ```
