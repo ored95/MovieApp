@@ -56,3 +56,31 @@ PS C:\Users\*\Desktop\MovieApp\client> yo angular:route movies
    invoke   angular:view:C:\Users\*\AppData\Roaming\npm\node_modules\generator-angular\route\index.js
    create     app\views\movies.html
 ```
+
+# [Source for the Youtube URL parser](http://web.archive.org/web/20160926134334/http://lasnv.net/foro/839/Javascript_parsear_URL_de_YouTube)
+```
+<script type="text/javascript">
+function youtube_parser(url){
+	var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+	var match = url.match(regExp);
+	if (match && match[7].length == 11){
+	    var b = match[7];
+	    alert(b);
+	} else {
+	    alert("Url incorrect");
+	}
+}
+</script>
+```
+Try Angular YouTube Embed [here](http://brandly.github.io/angular-youtube-embed/#/)
+
+# Regex expression source [Here](https://regexr.com/3dnqv)
+
+# Read more
+1. [RestangularJS](https://github.com/mgonto/restangular)
+2. [Full tutorial about MEAN project](http://travistidwell.com/blog/2015/01/20/how-to-build-a-mean-web-application/)
+
+# More stuffs need to try:
+1. [Animation](https://www.npmjs.com/package/generator-css-animations)
+2. Security (login/password?)
+3. And so on.

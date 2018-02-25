@@ -72,6 +72,11 @@ angular
   })
   .filter('trusted', function ($sce) {
     return function(url) {
-      return $sce.trustAsResourceUrl(url);
+      var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+      var match = url.match(regExp);
+      var id = (match&&match[7].length==11)? match[7] : false;
+      if (id) {
+        return $sce.trustAsResourceUrl("https://www.youtube.com/embed/" + id);
+      }
     };
   });

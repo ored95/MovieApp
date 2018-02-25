@@ -29,7 +29,7 @@ body {
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
-    margin-top: 0;
+    margin-top: 1%;
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
@@ -65,6 +65,36 @@ body {
   p + h4 {
     margin-top: 28px;
   }
+}
+
+.banner-technologies-inner-technologies {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.banner-technologies-inner-technologies li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 21%;
+  margin-left: 4%;
+}
+
+.banner-technologies-inner-technologies li:first-child {
+  margin-left: 0;
+}
+
+.banner-technologies-inner-technologies li p {
+  margin-top: 5px;
+  height: 150px;
+}
+
+.about-project {
+  padding-left: 1%;
+}
+
+.about-project li {
+  display: inherit;
 }
 
 /* Responsive: Portrait tablets and up */
